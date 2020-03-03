@@ -1,0 +1,10 @@
+$bgcolor: green;
+
+:host {
+  background-color: $bgcolor;
+  display: block;
+}
+
+h1 {
+  color: white;
+}

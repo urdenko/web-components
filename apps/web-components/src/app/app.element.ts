@@ -1,4 +1,5 @@
 import html from './app.element.html';
+import style from './app.element.scss';
 
 export class AppElement extends HTMLElement {
   private _shadow: ShadowRoot;
@@ -12,7 +13,7 @@ export class AppElement extends HTMLElement {
     this._shadow = this.attachShadow({ mode: 'open' });
 
     const template = document.createElement('template');
-    template.innerHTML = html;
+    template.innerHTML = html + `<style>${style}</style>`;
     this._shadow.appendChild(template.content.cloneNode(true));
   }
 }
