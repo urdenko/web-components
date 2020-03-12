@@ -13,6 +13,9 @@
   "projects": {
     "web-components": {
       "tags": []
+    },
+    "engine": {
+      "tags": []
     }
   }
 }
