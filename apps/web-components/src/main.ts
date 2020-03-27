@@ -1,1 +1,4 @@
-import './app/app.element.ts';
+import './app/main/main.element.ts';
+import './app/footer/footer.element';
+import './app/header/header.element';
+import './app/list-item/list-item.element';

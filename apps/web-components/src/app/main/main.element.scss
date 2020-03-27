@@ -1,0 +1,9 @@
+$bgcolor: cadetblue;
+
+:host {
+  background-color: $bgcolor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}

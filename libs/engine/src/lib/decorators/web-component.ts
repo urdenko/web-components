@@ -14,7 +14,7 @@ export const WebComponent = (config: WebComponentConfig) => (
 
   const template = document.createElement('template');
   const styles = config.styles.reduce(
-    (compileStyles, style) => `${compileStyles}<style>${style}</style>`,
+    (compileStyles, style) => `${compileStyles}\n<style>\n${style}\n</style>`,
     ''
   );
 
