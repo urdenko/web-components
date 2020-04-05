@@ -15,12 +15,10 @@
             "index": "apps/web-components/src/index.html",
             "main": "apps/web-components/src/main.ts",
             "tsConfig": "apps/web-components/tsconfig.app.json",
-            "assets": [
-              "apps/web-components/src/favicon.ico",
-              "apps/web-components/src/assets"
-            ],
+            "assets": ["apps/web-components/src/favicon.ico", "apps/web-components/src/assets"],
             "styles": ["apps/web-components/src/styles.scss"],
-            "scripts": []
+            "scripts": [],
+            "optimization": true
           },
           "configurations": {
             "production": {
@@ -33,9 +31,9 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
+              "extractCss": false,
               "namedChunks": false,
-              "extractLicenses": true,
+              "extractLicenses": false,
               "vendorChunk": false,
               "budgets": [
                 {
@@ -63,10 +61,7 @@
           "options": {
             "linter": "eslint",
             "config": "apps/web-components/.eslintrc",
-            "tsConfig": [
-              "apps/web-components/tsconfig.app.json",
-              "apps/web-components/tsconfig.spec.json"
-            ],
+            "tsConfig": ["apps/web-components/tsconfig.app.json", "apps/web-components/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!apps/web-components/**"]
           }
         },
@@ -92,10 +87,7 @@
           "options": {
             "linter": "eslint",
             "config": "libs/engine/.eslintrc",
-            "tsConfig": [
-              "libs/engine/tsconfig.lib.json",
-              "libs/engine/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/engine/tsconfig.lib.json", "libs/engine/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/engine/**"]
           }
         },

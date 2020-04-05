@@ -7,3 +7,28 @@ $bgcolor: cadetblue;
   justify-content: space-between;
   height: 100%;
 }
+
+#list-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  height: 65vh;
+  overflow: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
+  button + button {
+    margin-left: 15px;
+  }
+}
+
+#total {
+  display: flex;
+  justify-content: center;
+  color: white;
+}

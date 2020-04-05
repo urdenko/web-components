@@ -26,7 +26,8 @@
   },
   "private": true,
   "dependencies": {
-    "document-register-element": "1.13.1"
+    "document-register-element": "1.13.1",
+    "rxjs": "^6.5.5"
   },
   "devDependencies": {
     "@nrwl/cypress": "9.0.4",
