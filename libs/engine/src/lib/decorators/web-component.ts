@@ -6,14 +6,15 @@ export const WebComponent = (config: WebComponentConfig) => (сustomElement: typ
     throw new Error('You need at least 1 dash in the custom element selector!');
   }
 
-  if (!config.template) {
+  if (config.template !== '' && !config.template) {
     throw new Error('You need to pass a template for the element');
   }
 
   const template = document.createElement('template');
-  const styles = config.styles.reduce((compileStyles, style) => `${compileStyles}\n<style>\n${style}\n</style>`, '');
+  const styles = config.styles && config.styles.reduce((compileStyles, style) => `${compileStyles}\n<style>\n${style}\n</style>`, '');
+  const sharedStyles = '\n<link rel="stylesheet" href="styles.css" />\n';
 
-  template.innerHTML = config.template + styles;
+  template.innerHTML = config.template + sharedStyles + (styles || '');
 
   const connectedCallback = сustomElement.prototype.connectedCallback;
 

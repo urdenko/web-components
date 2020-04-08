@@ -1,5 +1,5 @@
-export class WebComponentConfig {
+export interface WebComponentConfig {
   selector: string;
   template: string;
-  styles?: string[] = [];
+  styles?: string[];
 }

@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@web-components/engine": ["libs/engine/src/index.ts"]
+      "@web-components/engine": ["libs/engine/src/index.ts"],
+      "@web-components/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
